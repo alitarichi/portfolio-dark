@@ -17,5 +17,12 @@ const features = [
 ];
 
 export const Features = () => {
-  return null;
+  return (
+    <div className="bg-black text-white">
+      <div className="container">
+        <h2>Everything you need</h2>
+        <p></p>
+      </div>
+    </div>
+  );
 };

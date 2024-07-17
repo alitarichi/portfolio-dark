@@ -12,7 +12,7 @@ export const Navbar = () => {
             <Image
               src={logoImage}
               alt="Saas logo"
-              className="h-12 w-12 relative "
+              className="h-10 w-10 relative "
             />
           </div>
           <div className="border border-white border-opacity-30 h-10 w-10 inline-flex justify-center items-center rounded-lg sm:hidden">

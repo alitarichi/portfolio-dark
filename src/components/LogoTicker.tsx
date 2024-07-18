@@ -1,3 +1,5 @@
+"use client";
+
 import acmeLogo from "../assets/images/acme.png";
 import quantumLogo from "../assets/images/quantum.png";
 import echoLogo from "../assets/images/echo.png";

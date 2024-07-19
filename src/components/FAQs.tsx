@@ -22,5 +22,11 @@ const items = [
 ];
 
 export const FAQs = () => {
-  return null;
+  return (
+    <div className="bg-black text-white">
+      <div className="container">
+        <h2>Frequently asked questions </h2>
+      </div>
+    </div>
+  );
 };

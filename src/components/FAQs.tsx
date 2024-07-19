@@ -1,3 +1,5 @@
+import PlusIcon from "../assets/icons/plus.svg";
+
 const items = [
   {
     question: "What payment methods do you accept?",
@@ -26,6 +28,17 @@ export const FAQs = () => {
     <div className="bg-black text-white">
       <div className="container">
         <h2>Frequently asked questions </h2>
+        <div>
+          {items.map(({ question, answer }) => (
+            <div>
+              <div>
+                <span>{question}</span>
+                <PlusIcon />
+              </div>
+              <div>{answer}</div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

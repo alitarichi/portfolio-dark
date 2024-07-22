@@ -25,17 +25,19 @@ const items = [
 
 export const FAQs = () => {
   return (
-    <div className="bg-black text-white">
+    <div className=" text-white bg-gradient-to-b from-[#5D2CA8] to-black py-[72px]">
       <div className="container">
-        <h2>Frequently asked questions </h2>
-        <div>
+        <h2 className="text-center text-5xl tracking-tighter">
+          Frequently asked questions{" "}
+        </h2>
+        <div className="mt-12">
           {items.map(({ question, answer }) => (
             <div>
-              <div>
-                <span>{question}</span>
+              <div className="flex w-full">
+                <span className="flex-1">{question}</span>
                 <PlusIcon />
               </div>
-              <div>{answer}</div>
+              <div className="hidden">{answer}</div>
             </div>
           ))}
         </div>

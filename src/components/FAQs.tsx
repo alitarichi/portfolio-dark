@@ -1,3 +1,4 @@
+import React from "react";
 import PlusIcon from "../assets/icons/plus.svg";
 
 const items = [
@@ -23,6 +24,25 @@ const items = [
   },
 ];
 
+const AccordingItem = ({
+  question,
+  answer,
+}: {
+  question: string;
+  answer: string;
+}) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+  return (
+    <div className="py-7 border-b border-white/30">
+      <div className="flex items-center ">
+        <span className="flex-1 text-lg font-bold">{question}</span>
+        <PlusIcon />
+      </div>
+      <div className="hidden">{answer}</div>
+    </div>
+  );
+};
+
 export const FAQs = () => {
   return (
     <div className=" text-white bg-gradient-to-b from-[#5D2CA8] to-black py-[72px]">
@@ -32,9 +52,9 @@ export const FAQs = () => {
         </h2>
         <div className="mt-12">
           {items.map(({ question, answer }) => (
-            <div>
-              <div className="flex w-full">
-                <span className="flex-1">{question}</span>
+            <div className="py-7 border-b border-white/30">
+              <div className="flex items-center ">
+                <span className="flex-1 text-lg font-bold">{question}</span>
                 <PlusIcon />
               </div>
               <div className="hidden">{answer}</div>

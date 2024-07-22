@@ -1,7 +1,10 @@
+import helixImage from "../assets/images/helix2.png";
+import emoojiStarImage from "../assets/images/emojistar.png";
+
 export const CallToAction = () => {
   return (
-    <div className="bg-black text-white py-[72px] text-center">
-      <div className="container">
+    <div className="bg-black text-white py-[72px] sm:py-24 text-center">
+      <div className="container max-w-xl relative">
         <h2 className="font-bold text-5xl tracking-tighter sm:text-6xl">
           Get istant access
         </h2>
@@ -16,7 +19,7 @@ export const CallToAction = () => {
           <input
             type="email"
             placeholder="your@email.com"
-            className="h-12 bg-white/20 rounded-lg px-5 font-medium placeholder:text-[#9CA3AF]"
+            className="h-12 bg-white/20 rounded-lg px-5 font-medium placeholder:text-[#9CA3AF] flex-1"
           />
           <button className="bg-white text-black h-12 rounded-lg px-5">
             Get access

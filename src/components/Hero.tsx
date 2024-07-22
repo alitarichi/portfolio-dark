@@ -42,14 +42,20 @@ export const Hero = () => {
                 draggable="false"
               />
             </motion.div>
-
-            <Image
-              src={messageImage}
-              alt=""
-              height="200"
-              width="200"
-              className="absolute top-[56px] left-[498px] hidden sm:inline "
-            />
+            <motion.div
+              className="absolute top-[56px] left-[498px] hidden sm:inline"
+              drag
+              dragSnapToOrigin
+            >
+              <Image
+                src={messageImage}
+                alt=""
+                height="200"
+                width="200"
+                className="max-w-none"
+                draggable="false"
+              />
+            </motion.div>
           </div>
         </div>
         <div className="flex justify-center">

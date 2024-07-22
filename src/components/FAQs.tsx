@@ -54,12 +54,12 @@ const AccordingItem = ({
 
 export const FAQs = () => {
   return (
-    <div className=" text-white bg-gradient-to-b from-[#5D2CA8] to-black py-[72px]">
+    <div className=" text-white bg-gradient-to-b from-[#5D2CA8] to-black py-[72px] sm:py-24">
       <div className="container">
-        <h2 className="text-center text-5xl tracking-tighter">
-          Frequently asked questions{" "}
+        <h2 className="text-center text-5xl sm:text-6xl sm:max-w-[648px] mx-auto tracking-tighter">
+          Frequently asked questions
         </h2>
-        <div className="mt-12">
+        <div className="mt-12 max-w-[648px] mx-auto">
           {items.map(({ question, answer }) => (
             <AccordingItem question={question} answer={answer} key={question} />
           ))}

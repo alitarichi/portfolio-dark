@@ -1,3 +1,7 @@
+You can visit this website Live @ https://portfolio-dark-2024.netlify.app/
+
+If you have any questions or comments, please feel free to send an email to me @ tarichiali@gmail.com
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
